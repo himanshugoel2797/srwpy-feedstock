@@ -1,5 +1,5 @@
 {% set name = "srwpy" %}
-{% set version = "0.1" %}
+{% set version = "0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Synchrotron-Radiation-Workshop/SRW/archive/v{{ version }}.tar.gz
-  sha256: 53bdcb0c02c59659bd0cb3849eac15c166db65b69d6fb62d4b8bf97cc4c96be8
+  sha256: 5b4d6969deb5d3965b9dcad50ba509ef4ed0cf342b4380eb25760705b1f3dde3
 
 build:
   number: 0
