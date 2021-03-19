@@ -1,0 +1,12 @@
+diff --git a/python/setup.py b/python/setup.py
+index 1c8669c..23ed2d7 100644
+--- a/python/setup.py
++++ b/python/setup.py
+@@ -45,6 +45,7 @@ class CMakeBuild(build_ext):
+         if 'MODE' in env:
+             if env['MODE'] == 'omp':
+                 cmake_args += ['-DUSE_OPENMP=ON']
++        cmake_args += os.getenv('CMAKE_ARGS','').split(' ')
+         if os.name == 'nt':
+           # We need makefile generator that does not support multi-configuration builds
+           # otherwise windows will output a Release or Debug folder in which the artifacts
