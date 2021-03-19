@@ -22,14 +22,13 @@ requirements:
     - cmake
     - make  # [not win]
     - ninja  # [win]
+    - gnuconfig   # [unix]
     - llvm-openmp  # [osx]
     - libgomp      # [linux]
     - fftw  # [win]
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - cython                                 # [build_platform != target_platform]
-    - numpy                                  # [build_platform != target_platform]
-    - pybind11                               # [build_platform != target_platform]
+    - wget  # [build_platform != target_platform]
   host:
     - python
     - pip
