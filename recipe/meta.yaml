@@ -9,9 +9,11 @@ package:
 source:
   url: https://github.com/Synchrotron-Radiation-Workshop/SRW/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - 0001-cmake_args-osx_arm64.patch  # [build_platform != target_platform]
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -20,9 +22,13 @@ requirements:
     - cmake
     - make  # [not win]
     - ninja  # [win]
+    - gnuconfig   # [unix]
     - llvm-openmp  # [osx]
     - libgomp      # [linux]
     - fftw  # [win]
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - wget  # [build_platform != target_platform]
   host:
     - python
     - pip
