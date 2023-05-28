@@ -8,8 +8,6 @@ package:
 source:
   url: https://github.com/ochubar/SRW/archive/refs/tags/{{ version }}.tar.gz
   sha256: d9b80a01109933d154bd90423575e0395b366c280a52bd6054c35c274c95bc5d
-  patches:
-    - 0001-cmake_args-osx_arm64.patch  # [build_platform != target_platform]
 
 build:
   number: 0
