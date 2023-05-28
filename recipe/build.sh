@@ -6,4 +6,4 @@ cd env/python
 
 # No OMP packages for now (for consistency with PyPI), those will be available
 # once the corresponding PyPI packages are generated.
-python setup.py install
+${PYTHON} -m pip install . -vv
