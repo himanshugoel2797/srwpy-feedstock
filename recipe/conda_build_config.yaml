@@ -1,6 +1,0 @@
-MACOSX_DEPLOYMENT_TARGET:  # [osx]
-  - 10.15                  # [osx]
-c_compiler_version:        # [psx]
-  - 12                     # [osx]
-cxx_compiler_version:      # [psx]
-  - 12                     # [osx]
