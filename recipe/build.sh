@@ -8,7 +8,6 @@ cd env/python
 # once the corresponding PyPI packages are generated.
 
 if [ "$(uname -s)" == "Darwin" ]; then
-    export MACOSX_DEPLOYMENT_TARGET="10.15"
     export CMAKE_ARGS="-DCMAKE_C_FLAGS=-Wno-c++11-narrowing -DCMAKE_CXX_FLAGS=-Wno-c++11-narrowing"
 fi
 
