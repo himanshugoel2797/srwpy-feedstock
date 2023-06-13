@@ -277,5 +277,6 @@ Feedstock Maintainers
 =====================
 
 * [@hhslepicka](https://github.com/hhslepicka/)
+* [@himanshugoel2797](https://github.com/himanshugoel2797/)
 * [@mrakitin](https://github.com/mrakitin/)
 
