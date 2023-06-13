@@ -22,7 +22,7 @@ requirements:
     - gnuconfig   # [unix]
     # - llvm-openmp  # [osx]
     # - libgomp      # [linux]
-    - fftw  # [win]
+    - fftw  # [win or linux]
     - fftw-static  # [osx]
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
@@ -32,7 +32,7 @@ requirements:
     - pip
   run:
     - python
-    - fftw  # [win]
+    - fftw  # [win or linux]
     - fftw-static  # [osx]
     - h5py
     - matplotlib-base
